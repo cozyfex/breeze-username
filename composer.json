@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CozyFex\\LaravelDesign\\": "src/"
+            "CozyFex\\BreezeUsername\\": "src/"
         }
     },
     "extra": {
@@ -32,7 +32,7 @@
         },
         "laravel": {
             "providers": [
-                "CozyFex\\LaravelDesign\\DesignServiceProvider"
+                "CozyFex\\BreezeUsername\\BreezeUsernameServiceProvider"
             ]
         }
     },
