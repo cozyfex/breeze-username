@@ -54,8 +54,10 @@ class InstallCommand extends Command
         copy(__DIR__.'/../Requests/Auth/LoginRequest.php', app_path('Http/Requests/Auth/LoginRequest.php'));
 
         # Replace Views
-        copy(__DIR__.'/../views/auth/login.blade.php', resource_path('views/login.blade.php'));
-        copy(__DIR__.'/../views/auth/register.blade.php', resource_path('views/register.blade.php'));
+        copy(__DIR__.'/../views/auth/login.blade.php', resource_path('views/auth/login.blade.php'));
+        copy(__DIR__.'/../views/auth/register.blade.php', resource_path('views/auth/register.blade.php'));
+
+        $this->call('migrate');
 
         $this->info('[CozyFex Breeze Username] was installed successfully!');
 
